@@ -9,4 +9,4 @@ select * from prodotti where extract(year from data_attivazione) = 2017,and in_p
 5
 select * from fatture  join clienti on fatture.id_cliente=numero_cliente where importo <1000
 6
-
+select * from fatture join fornitori on fatture.numero_fornitore = fornitori.numero_fornitore

@@ -7,6 +7,6 @@ select count (*) from fatture where iva=20
 4
 select * from prodotti where extract(year from data_attivazione) = 2017,and in_prduzione='true',and in_commercio='true'
 5
-select * from fatture where importo <1000 join clienti on fatture.id_cliente numero_cliente
+select * from fatture  join clienti on fatture.id_cliente=numero_cliente where importo <1000
 6
 
